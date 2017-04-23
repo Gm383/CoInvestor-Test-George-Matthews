@@ -1,0 +1,84 @@
+/* Author - George Matthews */
+/* Work Date - 22/04/2017 - 23/04/2017 */
+/* Tested on Google Chrome and Firefox */
+
+/* Unimplemented Sass improvements:
+	Variable '$coreColour: #d60c5;' To Avoid repeats of CoInvestor colour. 
+	Unified alignment block used by most of the elements. 
+ */
+
+
+/*Simple background colour change to bright grey*/
+body{
+	background-color: #f2f2f2;
+}
+
+/*Broad text convention, alignment and font selection*/
+h1, p1, .name , .manager, #logo, #pages{
+	text-align: center;
+	font-family: Open Sans,sans-serif;
+}
+
+/*Styling of "Managers" header, simple but pleasing. Fits the CoInvestor aesthetic*/
+h1{
+	background-color: #d60c53;
+	color: white;
+	border-radius: 50px;
+}
+
+/*Name of Managers in each box, bold but uncoloured*/
+.name{
+	font-weight: bold;
+}
+	
+/*The Manager box itself, respectable padding between the border and text, coloured to bring focus to eat box with outline and strong white background colour.*/
+.manager{
+	padding: 20px;
+	border:2px solid #d60c53;
+	background-color: white;
+	border-radius: 25px;
+	text-align: center;
+}
+
+/*The central CoInvestor logo on the page*/
+#logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*The Investment Phases and Sponser Types sections of the Manager boxes, bold and maintains the core colour scheme of CoInvestor*/
+.venPhases, .sponTypes{
+	color: #d60c53;
+	font-weight: bold;
+}
+
+
+/*Targets the container of the boxes, but only modifies the spacing between each. Prevents eye clashing with touching pink borders*/
+#TableData{
+	border-spacing: 10px 10px;
+}
+
+/*The Placeholder images for the Manager logos, Styled to not be too apparent and blend in, with opacity and border-radius options*/
+#sponsorLogoPlaceholder{
+	border-radius: 25px;
+    opacity: 0.5;
+	height: 150px;
+	width: 150px;
+}
+
+/*Page buttons at the bottom of the page, uses core CoInvestor pink, clearly divided and contrasted with black text and page break above to make them stand out*/
+.pageButton{
+	background-color: #d60c53;
+	color: white;
+    border: none;
+	border-radius: 10px;
+    padding: 15px 30px;
+    margin: 10px;
+}
+
+/*Centres the core table of Managers*/
+#ManagersTable{
+	margin-left:auto; 
+    margin-right:auto;
+}
