@@ -88,6 +88,7 @@ function buildManager(input){
 		
 		$('#TableData').append(managerBox);
 		
+		//If the id of the next box is a multiple of the rowWidth, end the row and start a new one. 
 		if((i+1) % rowWidth == 0){
 			$('#TableData').append("</tr><tr>");
 		}
