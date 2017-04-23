@@ -62,22 +62,30 @@ function buildManager(input){
 	
 	for(var i=0; i < input.data.length; i++){
 		var manager = input.data[i];
+		
 		var managerBox = $(
 		//Creation of the Manager Box
 		"<td><div id='"+manager.id+"' class='manager'>"+
+		
 		//The Manager Name
 		"<div class='name'>"+manager.attributes.name+"</div>"+
+		
 		//The Logo and link to website as a single element. Error with Json, Placeholder used. 
 		"<a href='https://www.coinvestor.co.uk/managers/"+manager.attributes.url_slug+"'><img src = 'css/logo-placeholder.png' id='sponsorLogoPlaceholder' alt='View'></a>"+
+		
 		//The Manager's Investment Phases
 		"<div class='venPhases'>"+getInvestmentPhases(manager)+"</div>"+
+		
 		//The Manager description
 		"<div class='description'>"+manager.attributes.marketing.description_header+"</div>"+
+		
 		//The address of the Manager.
 		"<div class='address'>"+getAddresses(manager)+"</div>"+
+		
 		//The sponsor types of the manager.
 		"<div class='sponTypes'>"+getSponsorTypes(manager)+"</div>"+
 		"</div><td>");
+		
 		$('#TableData').append(managerBox);
 		
 		if((i+1) % rowWidth == 0){
